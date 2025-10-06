@@ -2,10 +2,12 @@ const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/authController');
 
-// Route to send OTP to a user's phone number or email
-router.post('/send-otp', authController.sendOtp);
+// Route for user registration
+// POST /api/auth/register
+router.post('/register', authController.register);
 
-// Route to verify the OTP and log in or sign up the user
-router.post('/verify-otp', authController.verifyOtp);
+// Route for user login
+// POST /api/auth/login
+router.post('/login', authController.login);
 
 module.exports = router;
