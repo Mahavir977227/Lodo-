@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #8e8e8e;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+#usernameInput {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px 0 0 3px;
+    font-size: 1rem;
+}
+
+#searchButton {
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#searchButton:hover {
+    background-color: #0077c6;
+}
+
+#resultContainer {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.profile-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.message {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #c7c7c7;
+    margin-top: 2rem;
+}

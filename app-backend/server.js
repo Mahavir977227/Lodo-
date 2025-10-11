@@ -9,6 +9,9 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
+// Serve static files from the 'public' directory
+app.use(express.static('public'));
+
 const authRoutes = require('./src/api/authRoutes');
 
 app.get('/', (req, res) => {
@@ -30,6 +33,9 @@ app.use('/api/admin', adminRoutes);
 
 // Admin routes
 app.use('/api/admin', adminRoutes);
+
+const instagramRoutes = require('./src/api/instagramRoutes');
+app.use('/api/instagram', instagramRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
